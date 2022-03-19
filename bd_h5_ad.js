@@ -29,7 +29,7 @@ if (url.indexOf("recommendpb/recomSiteTids") != -1 && method == getMethod) {
   }
 }
 
-if (url.indexOf("getstepgoodsad") != -1 || url.indexOf("getmarticle") != -1 ) {
+if (url.indexOf("getstepgoodsad") != -1 || url.indexOf("getmarticle") != -1 || url.indexOf("relatefeed") != -1) {
   console.log('经验h5-广告&底部推荐');
   if (body && body.data) {
     body.data=null;
