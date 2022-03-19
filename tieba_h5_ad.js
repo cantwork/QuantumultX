@@ -5,8 +5,10 @@ const postMethod = "POST";
 const notifiTitle = "去广告脚本错误";
 
 let body = JSON.parse($response.body);
+console.log('贴吧h5');
+console.log(url);
 
-if(url.indexOf("tieba.baidu.com/mg/p/getPbData") != -1 && method == getMethod){
+if(url.indexOf("getPbData") != -1 && method == getMethod){
   console.log('贴吧h5-帖子详情');
   if (body && body.data) {
     body.data.asp_ad_list=null;
@@ -16,7 +18,7 @@ if(url.indexOf("tieba.baidu.com/mg/p/getPbData") != -1 && method == getMethod){
   }else{
     $notification.post(notifiTitle, "贴吧-getPbData", "广告为undefined");
   }
-} else if (url.indexOf("tieba.baidu.com/mo/q/recommendpb/recomSiteTids") != -1 && method == postMethod) {
+} else if (url.indexOf("recommendpb/recomSiteTids") != -1 && method == postMethod) {
   console.log('贴吧h5-帖子底部推荐');
   if (body && body.data) {
     body.data.hot_list=[];
