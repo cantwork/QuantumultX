@@ -8,7 +8,7 @@ let body = JSON.parse($response.body);
 console.log(url);
 
 if(url.indexOf("getPbData") != -1 && method == getMethod){
-  console.log('贴吧h5-帖子详情-广告');
+  console.log('贴吧h5-帖子详情');
   if (body && body.data) {
     body.data.asp_ad_list=null;
     body.data.banner_list=null;
@@ -19,7 +19,7 @@ if(url.indexOf("getPbData") != -1 && method == getMethod){
   }
 } 
 if (url.indexOf("recommendpb/recomSiteTids") != -1 && method == getMethod) {
-  console.log('贴吧h5-帖子底部推荐');
+  console.log('贴吧h5-底部推荐');
   if (body && body.data) {
     body.data.hot_list=null;
     body.data.site_list=null;
@@ -27,7 +27,16 @@ if (url.indexOf("recommendpb/recomSiteTids") != -1 && method == getMethod) {
   }else{
     $notification.post(notifiTitle, "贴吧-recomSiteTids", "广告为undefined");
   }
-  
+}
+
+if (url.indexOf("getstepgoodsad") != -1 || url.indexOf("getmarticle") != -1 ) {
+  console.log('经验h5-广告&底部推荐');
+  if (body && body.data) {
+    body.data=null;
+    console.log('成功');
+  }else{
+    $notification.post(notifiTitle, "经验-recomSiteTids", "广告为undefined");
+  }
 }
 
 body = JSON.stringify(body);
