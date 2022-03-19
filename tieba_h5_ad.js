@@ -18,7 +18,7 @@ if(url.indexOf("getPbData") != -1 && method == getMethod){
   }else{
     $notification.post(notifiTitle, "贴吧-getPbData", "广告为undefined");
   }
-} else if (url.indexOf("recommendpb/recomSiteTids") != -1 && method == postMethod) {
+} else if (url.indexOf("recommendpb/recomSiteTids") != -1 && method == getMethod) {
   console.log('贴吧h5-帖子底部推荐');
   if (body && body.data) {
     body.data.hot_list=[];
