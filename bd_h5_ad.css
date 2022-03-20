@@ -1,5 +1,5 @@
 div[class^="ec_r_"]{
-	position: fixed !important;
-	z-index: -1;
-	height: 0;
+	position: fixed!important;
+	z-index: -1!important;
+	height: 0!important;
 }
