@@ -1,4 +1,4 @@
-[class^=ec_r_]{
+div[class^="ec_r_"]{
 	position: fixed !important;
 	z-index: -1;
 	height: 0;
