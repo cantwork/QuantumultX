@@ -5,7 +5,6 @@ const postMethod = "POST";
 const notifiTitle = "去广告脚本错误";
 
 let body = JSON.parse($response.body);
-console.log(url);
 
 if(url.indexOf("getPbData") != -1 && method == getMethod){
   console.log('贴吧h5-帖子详情');
