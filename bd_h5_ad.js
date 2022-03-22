@@ -6,6 +6,16 @@ const notifiTitle = "去广告脚本错误";
 
 let body = JSON.parse($response.body);
 
+if(url.indexOf("getrelatedbusiness") != -1 && method == getMethod){
+  console.log('百科h5-ad');
+  if (body && body.relatedBusiness) {
+    body.relatedBusiness=null;
+    console.log('成功');
+  }else{
+    console.log(notifiTitle, "百科-getrelatedbusiness", "广告为undefined");
+  }
+} 
+
 if(url.indexOf("getPbData") != -1 && method == getMethod){
   console.log('贴吧h5-帖子详情');
   if (body && body.data) {
