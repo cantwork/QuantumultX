@@ -14,7 +14,7 @@ if(url.indexOf("getPbData") != -1 && method == getMethod){
     body.data.recommend_threads=null;
     console.log('成功');
   }else{
-    $notification.post(notifiTitle, "贴吧-getPbData", "广告为undefined");
+    console.log(notifiTitle, "贴吧-getPbData", "广告为undefined");
   }
 } 
 if (url.indexOf("recommendpb/recomSiteTids") != -1 && method == getMethod) {
@@ -24,7 +24,7 @@ if (url.indexOf("recommendpb/recomSiteTids") != -1 && method == getMethod) {
     body.data.site_list=null;
     console.log('成功');
   }else{
-    $notification.post(notifiTitle, "贴吧-recomSiteTids", "广告为undefined");
+    console.log(notifiTitle, "贴吧-recomSiteTids", "广告为undefined");
   }
 }
 
@@ -34,7 +34,7 @@ if (url.indexOf("getstepgoodsad") != -1 || url.indexOf("getmarticle") != -1 || u
     body.data=null;
     console.log('成功');
   }else{
-    $notification.post(notifiTitle, "经验-recomSiteTids", "广告为undefined");
+    console.log(notifiTitle, "经验-recomSiteTids", "广告为undefined");
   }
 }
 
