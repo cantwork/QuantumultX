@@ -12,7 +12,7 @@ if(url.indexOf("/statuses/show.json") != -1 && method == getMethod){
     body.title_ad_pic=null;
     console.log('成功');
   }else{
-    $notification.post(notifiTitle, "雪球show.json", "广告为undefined");
+    console.log(notifiTitle, "雪球show.json", "广告为undefined");
   }
 } 
 
