@@ -11,8 +11,6 @@ if(url.indexOf("/statuses/show.json") != -1 && method == getMethod){
   if (body && body.title_ad_pic) {
     body.title_ad_pic=null;
     console.log('成功');
-  }else{
-    console.log(notifiTitle, "雪球show.json", "广告为undefined");
   }
 } 
 
