@@ -11,6 +11,11 @@ if(url.indexOf("/statuses/show.json") != -1 && method == getMethod){
     body.title_ad_pic=null;
   }
 } 
+if(url.indexOf("/analysis/status/underlying_product.json") != -1 && method == getMethod){
+  if (body && body.data) {
+    body.data=[];
+  }
+}
 
 body = JSON.stringify(body);
 
