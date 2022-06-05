@@ -27,6 +27,15 @@ if(url.indexOf("getqbcontent") != -1 && method == getMethod){
     console.log(notifiTitle, "知道-getqbcontent", "广告为undefined");
   }
 } 
+if(url.indexOf("getqbfeed") != -1 && method == getMethod){
+  console.log('知道h5-信息流');
+  if (body && body.data) {
+    body.data=null;
+    console.log('成功');
+  }else{
+    console.log(notifiTitle, "知道-getqbfeed", "广告为undefined");
+  }
+} 
 
 if(url.indexOf("getPbData") != -1 && method == getMethod){
   console.log('贴吧h5-帖子详情');
