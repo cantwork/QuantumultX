@@ -18,6 +18,16 @@ if(url.indexOf("getrelatedbusiness") != -1 || url.indexOf("getbaiketurboqmrs") !
   }
 } 
 
+if(url.indexOf("getqbcontent") != -1 && method == getMethod){
+  console.log('知道h5-详情');
+  if (body && body.adsAll) {
+    body.adsAll=null;
+    console.log('成功');
+  }else{
+    console.log(notifiTitle, "知道-getqbcontent", "广告为undefined");
+  }
+} 
+
 if(url.indexOf("getPbData") != -1 && method == getMethod){
   console.log('贴吧h5-帖子详情');
   if (body && body.data) {
