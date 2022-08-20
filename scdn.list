@@ -1,2 +1,3 @@
 HOST-SUFFIX, SCDN.CO, direct
 HOST-SUFFIX, audio-ak-spotify-com.akamaized.net, direct
+HOST-SUFFIX, smoot.apple.com, proxy
