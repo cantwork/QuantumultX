@@ -3,3 +3,4 @@ HOST-SUFFIX, audio-ak-spotify-com.akamaized.net, direct
 host-suffix, ads.twitch.tv, reject
 host-keyword, adsystem, reject
 host-suffix, adsystem.com, reject
+HOST-SUFFIX, dealer.spotify.com, US
