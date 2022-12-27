@@ -1,0 +1,10 @@
+# NAME: ad
+
+
+# REJECT
+^https?:\/\/api\.xueqiu\.com\/ads\/display url reject
+^https?:\/\/api\.xueqiu\.com\/brand\/search\/v1\.json url reject
+
+
+# MITM
+hostname = api.xueqiu.com
