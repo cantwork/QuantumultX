@@ -1,0 +1,3 @@
+host-suffix, ads.twitch.tv, reject
+host-keyword, adsystem, reject
+host-suffix, adsystem.com, reject
