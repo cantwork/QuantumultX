@@ -1,3 +1,5 @@
 HOST-SUFFIX, audio-fa.scdn.co, direct
 HOST-KEYWORD, spotify-com.akamaized.net, direct
 
+HOST, audio-ak-spotify-com.akamaized.net, direct
+HOST, audio4-ak-spotify-com.akamaized.net, direct
