@@ -1,3 +1,8 @@
 host-suffix, ads.twitch.tv, reject
 host-keyword, adsystem, reject
 host-suffix, adsystem.com, reject
+
+#NSFW
+#x1hub.com
+HOST-SUFFIX, jads.co, REJECT
+HOST-SUFFIX, juicyads.com, REJECT
